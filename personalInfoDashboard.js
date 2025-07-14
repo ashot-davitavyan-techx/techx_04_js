@@ -39,7 +39,7 @@ if (score >= 90 && score <= 100){
 
 // Switch section
 
-switch(grade){
+switch(grade) {
     case "A":
         console.log("Excellent Work!");
         break;

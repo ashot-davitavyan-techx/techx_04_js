@@ -17,8 +17,8 @@ console.log(`I am ${currentYear-birthYear} years old and currently ${isStudent ?
 ageString = "25";
 ageNumber = 25;
 
-console.log(`25(string) and 25(number) regular comparison result: ${ageString==ageNumber}`);
-console.log(`25(string) and 25(number) strict comparison result: ${ageNumber===ageString}`);
+console.log(`25(string) and 25(number) regular comparison result: ${ageString == ageNumber}`);
+console.log(`25(string) and 25(number) strict comparison result: ${ageNumber === ageString}`);
 
 // if else practice
 

@@ -9,29 +9,34 @@ let contact = {
     phone: 96001189,
     city: "Yerevan"
 };
+let hobbiesString = "";
 
 console.log(`Hi, my name is ${firstName} ${lastName}. I live in ${contact.city}`);
-console.log(`I am ${currentYear-birthYear} years old and currently ${isStudent ? "a student" : "not a student"}`);
+console.log(`I am ${currentYear - birthYear} years old and currently ${isStudent ? "a student" : "not a student"}`);
+for (let i = 0; i < hobbies.length; i++) {
+    hobbiesString += " " + hobbies[i];
+}
+console.log(`My hobbies are${hobbiesString}`);
 
 // Type Cercion & Comparison
 ageString = "25";
 ageNumber = 25;
 
-console.log(`25(string) and 25(number) regular comparison result: ${ageString==ageNumber}`);
-console.log(`25(string) and 25(number) strict comparison result: ${ageNumber===ageString}`);
+console.log(`25(string) and 25(number) regular comparison result: ${ageString == ageNumber}`);
+console.log(`25(string) and 25(number) strict comparison result: ${ageNumber === ageString}`);
 
 // if else practice
 
-let score = 50;
+let score = 90;
 let grade;
 
-if (score >= 90 && score <= 100){
+if (score >= 90 && score <= 100) {
     grade = ("A");
-} else if (score >= 80 && score <= 89){
+} else if (score >= 80 && score <= 89) {
     grade = ("B");
-} else if (score >= 70 && score <= 79){
+} else if (score >= 70 && score <= 79) {
     grade = ("C");
-} else if (score >= 60 && score <= 69){
+} else if (score >= 60 && score <= 69) {
     grade = ("D");
 } else {
     grade = ("F");
@@ -39,7 +44,7 @@ if (score >= 90 && score <= 100){
 
 // Switch section
 
-switch(grade){
+switch (grade) {
     case "A":
         console.log("Excellent Work!");
         break;
